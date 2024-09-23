@@ -1,0 +1,25 @@
+.slide-background {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background-color: #FFCF00;
+  margin-top: 30px;
+  transition: clip-path 1s ease-out; /* clip-path에 트랜지션 추가 */
+}
+
+.quarter-circle.bottom-left {
+  clip-path: circle(320px at 0% 100%); /* 왼쪽 하단 1/4 원 */
+}
+
+.quarter-circle.bottom-right {
+  clip-path: circle(320px at 100% 100%); /* 오른쪽 하단 1/4 원 */
+}
+
+.quarter-circle.top-left {
+  clip-path: circle(320px at 0% 0%); /* 왼쪽 상단 1/4 원 */
+}
+
+.quarter-circle.top-right {
+  clip-path: circle(320px at 100% 0%); /* 오른쪽 상단 1/4 원 */
+}
+
